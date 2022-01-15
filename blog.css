@@ -420,16 +420,6 @@ html, body{
     list-style: none;
 }
 
-@media screen and (max-width: 321px) {
-    .header-nav-img{
-        
-    }
-
-    .mobile-menu .sign-up{
-        
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .header-nav{
         justify-content: space-between;

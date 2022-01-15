@@ -104,15 +104,15 @@
                 from Hanoi University with a shared vision to deliver insightful 
                 content to make marketing more impactful and more efficient.
             </div>
-            <div class="about__container-content" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="0">
+            <div class="about__container-content">
                 <div class="about__container-content-number">3K</div>
                 <div class="about__container-content-text">Projects<br/>Done</div>
             </div>
-            <div class="about__container-content" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="0">
+            <div class="about__container-content">
                 <div class="about__container-content-number">2K</div>
                 <div class="about__container-content-text">Happy<br/>Clients</div>
             </div>
-            <div class="about__container-content__global" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="0">
+            <div class="about__container-content__global">
                 <div class="about__container-content-number">4K</div>
                 <div class="about__container-content-text">Global<br/>Clients</div>
             </div>
@@ -733,7 +733,8 @@
     <script src="index.js"></script>
     <script>
         AOS.init({
-            // once: true,
+            once: true,
+            disable: window.innerWidth < 1024
         });
     </script>
 </body>
