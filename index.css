@@ -1183,4 +1183,14 @@ html, body{
         transform: scale(0.4);
         margin-top: 0px;
     }
+
+    .header-nav-content__title{
+        font-size: 35px;
+    }
+
+    .header-nav-content__description{
+        width: 75%;
+        padding-top: 20px;
+        margin: auto;
+    }
 }
