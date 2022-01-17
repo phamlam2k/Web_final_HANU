@@ -134,25 +134,35 @@ html, body{
 }
 
 .service-banner-content-part{
-    padding: 50px 40px;
-    border-radius: 10px;
     width: calc(33.333% - 20px);
     box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.11), 0 12px 90px 0 rgba(0, 0, 0, 0.11);
 }
 
-.service-banner-content-part__atom{
+.service-banner-content-part-div{
     padding: 50px 40px;
-    background-image: linear-gradient(to top right, #25ACAB 15%, #4F98B3 25%, #5F8BB7 30%, #B33AD4 80%);
+    width: 100%;
+    background-color: white;
+    height: 100%;
     border-radius: 10px;
-    width: calc(33.333% - 20px);
-    box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.11), 0 12px 90px 0 rgba(0, 0, 0, 0.11);
 }
 
-.service-banner-content-part__collaborative{
+.service-banner-content-part-div__atom{
     padding: 50px 40px;
+    width: 100%;
+    background-image: linear-gradient(to top right, #25ACAB 10%, #4F98B3 15%, #5F8BB7 20%, #B33AD4 80%);
+    color: white;
+    height: 100%;
     border-radius: 10px;
-    width: calc(33.333% - 20px);
-    box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.11), 0 12px 90px 0 rgba(0, 0, 0, 0.11);
+}
+
+.service-banner-content-part:hover .service-banner-content-part-div{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.service-banner-content-part:hover .service-banner-content-part-div__atom{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .service-banner-content-part__title{
@@ -251,6 +261,7 @@ html, body{
 .service-pricing__container-part-button{
     width: 80%;
     background-color: #00D4F1;
+    cursor: pointer;
     margin: auto;
     text-align: center;
     padding: 20px 0px;
@@ -298,6 +309,10 @@ html, body{
 }
 
 .service-about__content-part-content__btn{
+    width: fit-content;
+}
+
+.service-about__content-part-content__btn-content{
     cursor: pointer;
     background-color: white;
     color: #9649E6;
@@ -307,6 +322,11 @@ html, body{
     margin-top: 20px;
     padding: 10px 30px;
     border-radius: 30px;
+}
+
+.service-about__content-part-content__btn-content:hover{
+    background-color: #9649E6;
+    color: white;
 }
 
 .service-about__content-part-content__title{
@@ -319,7 +339,6 @@ html, body{
 .service-about__content-part-content__description{
     color: white;
 }
-
 /*Footer */
 .footer-content{
     width: 75%;

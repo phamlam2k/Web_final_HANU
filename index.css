@@ -3,6 +3,10 @@ html, body{
     overflow-x: hidden;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 .header{
     background-image: linear-gradient(to top right, #25ACAB 10%, #4F98B3 15%, #5F8BB7 20%, #B33AD4 80%);
 }
@@ -64,6 +68,7 @@ html, body{
 
 .sign-up{
     border: 1px solid white;
+    cursor: pointer;
     padding: 10px 30px;
     color: white;
     border-radius: 30px;
@@ -100,6 +105,7 @@ html, body{
 .header-nav-content__btn-get{
     padding: 10px 40px;
     background-color: white;
+    cursor: pointer;
     font-size: 20px;
     color: black;
     border-radius: 60px;
@@ -109,6 +115,7 @@ html, body{
 .header-nav-content__btn-try{
     padding: 10px 40px;
     color: white;
+    cursor: pointer;
     margin-left: 5px;
     border: 1px solid white;
     border-radius: 60px;
@@ -154,17 +161,27 @@ html, body{
 .about__container-content{
     width: 40%;
     margin-top: 50px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
 
+.about__container-content:hover .about__container-content-number{
+    transform: scale(1.2);
+}
+
 .about__container-content__global{
     width: 17%;
     display: flex;
+    cursor: pointer;
     margin-top: 50px;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.about__container-content__global:hover .about__container-content-number{
+    transform: scale(1.2);
 }
 
 .about__container-content-number{
@@ -208,12 +225,23 @@ html, body{
 }
 
 .service-banner-content-part{
-    padding: 50px 40px;
-    border-radius: 10px;
-    background-color: white;
     width: calc(33.333% - 20px);
     box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.11), 0 12px 90px 0 rgba(0, 0, 0, 0.11);
 }
+
+.service-banner-content-part-div{
+    padding: 50px 40px;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.service-banner-content-part:hover .service-banner-content-part-div{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 
 .service-banner-content-part__title{
     font-size: 30px;
@@ -263,6 +291,10 @@ html, body{
 }
 
 .service-about__content-part-content__btn{
+    width: fit-content;
+}
+
+.service-about__content-part-content__btn-content{
     cursor: pointer;
     background-color: white;
     color: #9649E6;
@@ -272,6 +304,11 @@ html, body{
     margin-top: 20px;
     padding: 10px 30px;
     border-radius: 30px;
+}
+
+.service-about__content-part-content__btn-content:hover{
+    background-color: #9649E6;
+    color: white;
 }
 
 .service-about__content-part-content__title{
@@ -379,6 +416,7 @@ html, body{
     color: white;
     
 }
+
 /*banner-blog*/
 .banner{
     width: 75%;
@@ -398,18 +436,34 @@ html, body{
 
 .banner-content-block-part-title-news__part-div__post{
     display: flex;
+    align-items: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .banner-content-block-part-title-news__part-div__post-img{
-    width: 40%;
+    overflow: hidden;
+    width: 30%;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
     margin-left: -16px;
     object-fit: cover;
 }
 
+.banner-content-block-part-title-news__part-div__post img{
+    object-fit: cover;
+    border-radius: 15px;
+}
+.banner-content-block-part-title-news__part-div__post:hover img{
+    transform: scale(1.2);
+    
+}
+
 .banner-content-block-part-title-news__part-div__post-description{
     width: 50%;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
     font-size: 20px;
 }
 
@@ -488,6 +542,11 @@ html, body{
     font-weight: 600;
 }
 
+.banner-content-block-part ul li div:hover{
+    color: #9649E6;
+    cursor: pointer;
+}
+
 .banner-content-block-part-title{
     font-size: 30px;
     font-weight: 700;
@@ -552,12 +611,22 @@ html, body{
 }
 
 .tags-part{
+    width: 40%;
+}
+
+.tags-part div{
     border: 2px solid black;
     padding: 5px 0px;
     text-align: center;
     border-radius: 5px;
     font-weight: 500;
-    width: 40%;
+    cursor: pointer;
+    width: 100%;
+}
+
+.tags-part div:hover{
+    background-color: black;
+    color: white;
 }
 
 .pagination{
@@ -1061,6 +1130,10 @@ html, body{
     .contact-container__address-flex__icon{
         padding: 0px;
         width: 100%;
+    }
+    
+    .banner{
+        width: 90%;
     }
     
     .banner-content{

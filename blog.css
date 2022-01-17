@@ -114,6 +114,7 @@ html, body{
     border-radius: 60px;
 }
 
+/*banner-blog*/
 .banner{
     width: 75%;
     margin: auto;
@@ -133,17 +134,32 @@ html, body{
 .banner-content-block-part-title-news__part-div__post{
     display: flex;
     width: 100%;
+    cursor: pointer;
 }
 
 .banner-content-block-part-title-news__part-div__post-img{
-    width: 40%;
+    overflow: hidden;
+    width: 30%;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
     margin-left: -16px;
     object-fit: cover;
 }
 
+.banner-content-block-part-title-news__part-div__post img{
+    object-fit: cover;
+    border-radius: 15px;
+}
+.banner-content-block-part-title-news__part-div__post:hover img{
+    transform: scale(1.2);
+    
+}
+
 .banner-content-block-part-title-news__part-div__post-description{
     width: 50%;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
     font-size: 20px;
 }
 
@@ -222,6 +238,11 @@ html, body{
     font-weight: 600;
 }
 
+.banner-content-block-part ul li div:hover{
+    color: #9649E6;
+    cursor: pointer;
+}
+
 .banner-content-block-part-title{
     font-size: 30px;
     font-weight: 700;
@@ -286,12 +307,22 @@ html, body{
 }
 
 .tags-part{
+    width: 40%;
+}
+
+.tags-part div{
     border: 2px solid black;
     padding: 5px 0px;
     text-align: center;
     border-radius: 5px;
     font-weight: 500;
-    width: 40%;
+    cursor: pointer;
+    width: 100%;
+}
+
+.tags-part div:hover{
+    background-color: black;
+    color: white;
 }
 
 .pagination{
@@ -510,6 +541,11 @@ html, body{
     }
 
     /* This is body*/
+
+    .banner{
+        width: 90%;
+    }
+
     .banner-content{
         margin-top: 0;
     }

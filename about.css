@@ -158,17 +158,27 @@ html, body{
 .about__container-content{
     width: 40%;
     margin-top: 50px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
 
+.about__container-content:hover .about__container-content-number{
+    transform: scale(1.2);
+}
+
 .about__container-content__global{
     width: 17%;
     display: flex;
+    cursor: pointer;
     margin-top: 50px;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.about__container-content__global:hover .about__container-content-number{
+    transform: scale(1.2);
 }
 
 .about__container-content-number{
