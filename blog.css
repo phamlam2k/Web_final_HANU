@@ -133,6 +133,7 @@ html, body{
 
 .banner-content-block-part-title-news__part-div__post{
     display: flex;
+    align-items: center;
     width: 100%;
     cursor: pointer;
 }
@@ -362,6 +363,7 @@ html, body{
     color: #9749E5;
     cursor: pointer;
 }
+
 
 .video{
     background-color: #529FB2;
